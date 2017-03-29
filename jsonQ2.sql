@@ -1,4 +1,4 @@
-explain analyze 
+EXPLAIN (ANALYZE, COSTS, VERBOSE, BUFFERS, FORMAT JSON)
 select
     ps_partkey,
     sum(ps_supplycost * ps_availqty) as value

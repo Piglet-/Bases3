@@ -1,4 +1,4 @@
-explain analyze 
+EXPLAIN (ANALYZE true, COSTS true, FORMAT yaml) 
 select
     ps_partkey,
     sum(ps_supplycost * ps_availqty) as value

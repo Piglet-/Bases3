@@ -1,4 +1,4 @@
-explain analyze 
+EXPLAIN (ANALYZE true, COSTS true, FORMAT yaml) 
 select
     supp_nation,
     cust_nation,

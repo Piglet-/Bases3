@@ -1,4 +1,4 @@
-explain analyze 
+EXPLAIN (ANALYZE, COSTS, VERBOSE, BUFFERS, FORMAT JSON)
 select
     supp_nation,
     cust_nation,
